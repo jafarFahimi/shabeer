@@ -1,0 +1,10 @@
+.style-bg-home {
+   background-color: rgb(15 23 42 / 0.6);
+}
+@media screen and (min-width: 768px) {
+   .style-bg-home {
+      background-color: transparent;
+      background-image: url("./images/bg4.png");
+      background-size: cover;
+   }
+}

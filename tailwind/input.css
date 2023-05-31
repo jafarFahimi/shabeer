@@ -1,3 +1,26 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+   .font-outline-2 {
+      -webkit-text-stroke: 2px white;
+   }
+   .font-outline-4 {
+      -webkit-text-stroke: 4px white;
+   }
+}
+
+@layer components {
+   .textEmpty {
+      @apply bg-clip-text text-transparent bg-slate-800 outline-4 font-outline-2;
+   }
+   .my-bg3 {
+      @apply bg-url('../images/bg4.png');
+   }
+}
+/* media query don't work here! */
+.my-bg2 {
+   background-image: url("../images/bg4.png");
+   background-size: cover;
+}
